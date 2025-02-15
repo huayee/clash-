@@ -51,6 +51,9 @@ DOMAIN-SUFFIX,now.com.hk
 DOMAIN-SUFFIX,nowe.com
 DOMAIN-SUFFIX,nowe.hk
 DOMAIN-SUFFIX,discomax.com
+DOMAIN-SUFFIX,busy.any-any.prd.api.discomax.com:443
+DOMAIN-SUFFIX,images.cdn.prd.api.discomax.com:443
+DOMAIN-SUFFIX,xbox.ctv.prd.beam.discomax.com:443
 DOMAIN-SUFFIX,api.discomax.com
 DOMAIN-KEYWORD,discomax
 DOMAIN-SUFFIX,players.brightcove.net
