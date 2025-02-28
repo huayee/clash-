@@ -6,8 +6,13 @@
 # DOMAIN-SUFFIX: 45
 # USER-AGENT: 2
 # TOTAL: 48
+
 DOMAIN,wmff.warnermediacdn.com
 DOMAIN-SUFFIX,bcbolthboa-a.akamaihd.net
+DOMAIN-SUFFIX,discomax.com
+DOMAIN-SUFFIX,max.com
+USER-AGENT,HBO%20NOW*
+USER-AGENT,HBOMAX*
 DOMAIN-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net
 DOMAIN-SUFFIX,cinemax.com
 DOMAIN-SUFFIX,dai3fd1oh325y.cloudfront.net
