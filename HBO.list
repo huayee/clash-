@@ -50,12 +50,11 @@ DOMAIN-SUFFIX,now.com
 DOMAIN-SUFFIX,now.com.hk
 DOMAIN-SUFFIX,nowe.com
 DOMAIN-SUFFIX,nowe.hk
+DOMAIN,prd.api.discomax.com
 DOMAIN-SUFFIX,discomax.com
-DOMAIN-KEYWORD,discomax
 DOMAIN-SUFFIX,busy.any-any.prd.api.discomax.com
 DOMAIN-SUFFIX,images.cdn.prd.api.discomax.com
 DOMAIN-SUFFIX,xbox.ctv.prd.beam.discomax.com
-DOMAIN-SUFFIX,prd.api.discomax.com
 DOMAIN-SUFFIX,thechinaacademy.org
 DOMAIN-SUFFIX,players.brightcove.net
 DOMAIN-SUFFIX,youboranqs01.com
