@@ -1,4 +1,4 @@
-# NAME: HBO
+# NAME: HBOMAX
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # UPDATED: 2024-07-03 16:16:13
@@ -50,11 +50,15 @@ DOMAIN-SUFFIX,now.com
 DOMAIN-SUFFIX,now.com.hk
 DOMAIN-SUFFIX,nowe.com
 DOMAIN-SUFFIX,nowe.hk
-DOMAIN,prd.api.discomax.com
+DOMAIN-SUFFIX,discomax.com
+DOMAIN-SUFFIX,max.com
+DOMAIN-KEYWORD,max.com
+DOMAIN-SUFFIX,prd.api.discomax.com
 DOMAIN-SUFFIX,discomax.com
 DOMAIN-SUFFIX,busy.any-any.prd.api.discomax.com
 DOMAIN-SUFFIX,images.cdn.prd.api.discomax.com
 DOMAIN-SUFFIX,xbox.ctv.prd.beam.discomax.com
+DOMAIN-SUFFIX,any-any.prd.api.max.com
 DOMAIN-SUFFIX,thechinaacademy.org
 DOMAIN-SUFFIX,players.brightcove.net
 DOMAIN-SUFFIX,youboranqs01.com
