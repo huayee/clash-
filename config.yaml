@@ -53,15 +53,13 @@ proxy-groups:
     type: url-test
     use:
       - 机场订阅
-    filter:
-      - '香港|🇭🇰|HK'
-      - '台湾|🇹🇼|TW'
-      - '新加坡|🇸🇬|SG'
+    filter: '香港|🇭🇰|HK|台湾|🇹🇼|TW|新加坡|🇸🇬|SG'
     proxies: []
     url: http://www.gstatic.com/generate_204
     interval: 180
     tolerance: 50
     lazy: true
+
 
 rules:
   - GEOIP,CN,DIRECT
