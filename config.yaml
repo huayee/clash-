@@ -1,0 +1,69 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 114.114.114.114
+    - 8.8.8.8
+  fallback:
+    - tls://dns.google
+
+proxies:
+  - name: 自建-VPS-美国
+    type: vmess
+    server: us.qijiaqiao.top
+    port: 443
+    uuid: 5609eeed-9f37-4460-f881-bfc515553baa
+    alterId: 0
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /5609eeed
+      headers:
+        Host: us.qijiaqiao.top
+    tls: true
+    skip-cert-verify: false
+    udp: true
+
+proxy-providers:
+  机场订阅:
+    type: http
+    url: "https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=f9d4249f07dc88f07998387e00a9f197"
+    path: ./机场订阅.yaml
+    interval: 480
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+proxy-groups:
+  - name: 默认代理
+    type: select
+    proxies:
+      - 自建-VPS-美国
+      - 机场-港澳台最快
+
+  - name: 机场-港澳台最快
+    type: url-test
+    use:
+      - 机场订阅
+    filter:
+      - '香港|🇭🇰|HK'
+      - '台湾|🇹🇼|TW'
+      - '新加坡|🇸🇬|SG'
+    proxies: []
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    tolerance: 50
+    lazy: true
+
+rules:
+  - GEOIP,CN,DIRECT
+  - GEOSITE,cn,DIRECT
+  - MATCH,默认代理
