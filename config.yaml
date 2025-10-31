@@ -28,7 +28,7 @@ proxies:
       headers:
         Host: us.qijiaqiao.top
     tls: true
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
 
 proxy-providers:
